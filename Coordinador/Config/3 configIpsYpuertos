@@ -1,0 +1,35 @@
+1. Ir a
+Sistema -> Administracion -> Red
+
+2. Dar clic en boton "Desbloquear" e Ingresar clave de root
+
+3. Seleccionar "Conexion cableada" y luego clic en "Propiedades"
+
+4. Deseleccionar "Activar el modo itinerante"
+
+5. En la opcion "Configuracion" seleccionar "Direccion IP estatica"
+
+6. Para configurar las opciones "Direccion IP", "Mascara de sub-red" y "Direccion de la puerta de enlace":
+6.1. Abrir una consola
+6.2. Ejecutar
+ifconfig
+6.3. Colocar en las 3 opciones anteriores lo que suministra este comando
+inet direccion = Direccion IP
+Mascara = Mascara de sub-red
+xxxx = Direccion de la puerta de enlace
+6.4. Dar clic en boton "Cerrar"
+
+7. Abrir el archivo "sc.conf" que se encuentra en la carpeta "Coordinador"
+
+8. Borrar "localhost" y colocar la ip dada por ifconfig
+
+9. Guardar y cerrar el archivo
+
+CONFIGURAR DIRECCION POZO
+
+10. Abrir el archivo "pozo.conf" que se encuentra en la carpeta "Coordinador"
+
+11. Cambiar "localhost" por la ip donde se encuentra el pozo
+
+12. Guardar y cerrar el archivo
+

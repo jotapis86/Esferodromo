@@ -1,0 +1,5 @@
+1. Descomprimir 
+elo_usb3.1_Ubuntu_8.04_smp_2.6.24-19-generic_x86.tar.gz
+
+2. Seguir las instrucciones del archivo readme.txt que se encuentra en la carpeta bin-usb
+

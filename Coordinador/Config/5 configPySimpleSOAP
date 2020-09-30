@@ -1,0 +1,24 @@
+Objetivo: Configurar las librerias pySimpleSOAP y httpLib2 para poder consumir webServices del sistema Mega Puntos.
+
+1. Copiar el archivo "httplib2-0.7.4.zip" al escritorio del equipo y descomprimirlo
+
+2. Ingresar a la carpeta creada al descomprimir
+cd httplib2-0.7.4
+
+3. Instalar la libreria
+python setup.py install
+
+4. Copiar el archivo "pysimplesoap-1.05a.zip" al escritorio y descomprimirlo
+
+5. Ingresar a la carpeta creada al descomprimir
+cd pysimplesoap-1.05a
+
+6. Instalar la libreria
+python setup.py install
+
+7. Borrar los archivos copiados y carpetas creadas en el escritorio
+
+8. Comprobar el funcionamiento de pySimpleSOAP ejecutando el archivo "demoSOAP.py" (requiere internet o modificar la dir del webservice)
+
+9. Revisar que param de TIMEOUT queda mejor modificando el archivo "client.py" en modo sudo:
+	/usr/lib/python2.5/site-packages/pysimplesoap

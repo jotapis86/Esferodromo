@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,nofollow">
+
+<title>InstallingOnUbuntuOrDebian - wxPyWiki</title>
+<script type="text/javascript" src="InstallingWxOnUbuntuOrDebian_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Búsqueda";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="InstallingWxOnUbuntuOrDebian_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="InstallingWxOnUbuntuOrDebian_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="InstallingWxOnUbuntuOrDebian_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="InstallingWxOnUbuntuOrDebian_files/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/static/modern/css/msie.css">
+<![endif]-->
+
+
+
+
+
+<link rel="Start" href="http://wiki.wxpython.org/FrontPage">
+<link rel="Alternate" title="Formato Wiki" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=raw">
+<link rel="Alternate" media="print" title="Vista de impresión" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=print">
+<link rel="Search" href="http://wiki.wxpython.org/FindPage">
+<link rel="Index" href="http://wiki.wxpython.org/TitleIndex">
+<link rel="Glossary" href="http://wiki.wxpython.org/WordIndex">
+<link rel="Help" href="http://wiki.wxpython.org/HelpOnFormatting">
+</head><body dir="ltr" lang="es">
+
+<div id="header">
+<div id="logo"><a href="http://wiki.wxpython.org/FrontPage"><img src="InstallingWxOnUbuntuOrDebian_files/wxPyWiki.png" alt="wxPyWiki"></a></div>
+
+<form id="searchform" method="get" action="/InstallingOnUbuntuOrDebian">
+<div>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label style="display: none;" for="searchinput">Buscar:</label>
+<input class="disabled" id="searchinput" name="value" value="" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" type="text">
+<input disabled="disabled" id="titlesearch" name="titlesearch" value="Títulos" alt="Search Titles" type="submit">
+<input disabled="disabled" id="fullsearch" name="fullsearch" value="Texto" alt="Search Full Text" type="submit">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<ul id="username"><li><a href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=login" id="login" rel="nofollow">Ingresar</a></li></ul>
+<div id="locationline">
+
+
+<ul id="pagelocation">
+<li><a class="backlink" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=fullsearch&amp;context=180&amp;value=linkto%3A%22InstallingOnUbuntuOrDebian%22" rel="nofollow" title="Efectuar una búsqueda por páginas que tienen este título en contenidos">InstallingOnUbuntuOrDebian</a></li>
+</ul>
+
+</div>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="http://wiki.wxpython.org/FrontPage">FrontPage</a></li><li class="wikilink"><a href="http://wiki.wxpython.org/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="http://wiki.wxpython.org/SiteNavigation">SiteNavigation</a></li><li class="wikilink"><a href="http://wiki.wxpython.org/FindPage">FindPage</a></li><li class="wikilink"><a href="http://wiki.wxpython.org/HelpContents">HelpContents</a></li><li class="current"><a href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian">InstallingO...ntuOrDebian</a></li>
+</ul>
+
+<div id="pageline"><hr style="display: none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Página inmutable</span></li><li class="toggleCommentsButton" style="display: none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comentarios</a></li><li><a class="nbinfo" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=info" rel="nofollow">Información</a></li><li><a class="nbattachments" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=AttachFile" rel="nofollow">Adjuntos</a></li><li>
+<form class="actionsmenu" method="get" action="/InstallingOnUbuntuOrDebian">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">Más Acciones</option><option value="raw">Texto sin formato</option>
+<option value="print">Vista de impresión</option>
+<option value="RenderAsDocbook">Mostrar en Docbook</option>
+<option value="refresh">Eliminar caché</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Corregir ortografía</option>
+<option value="LikePages">Páginas similares</option>
+<option value="LocalSiteMap">Mapa del sitio</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Renombrar Página</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Eliminar página</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Suscribir Usuario</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Eliminar Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revertir a esta revisión</option>
+<option value="show" disabled="disabled" class="disabled">Empaquetar Páginas</option>
+<option value="SyncPages">Sincronizar Páginas</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Subir</option>
+<option value="Save">Guardar</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('Más Acciones');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h2 id="Installing_wxWidgets_and_wxPython_On_Ubuntu_Or_Debian">Installing wxWidgets and wxPython On Ubuntu Or Debian</h2>
+<span class="anchor" id="line-2"></span><p class="line862">There are
+wxWidgets and wxPython packages in the standard software repositories
+for Debian and Ubuntu, but they are usually at least a few releases
+behind the current release, and in some cases <strong>many</strong>
+releases behind. Since many users prefer to use only packages installed
+from repositories (for easier package management) but still would like
+to have newest versions possible of their installed software, we have
+our own APT repository that is usually updated within a few days of
+each release. To use it to be able to keep your wx on the cutting edge
+release just follow these instructions. <span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span></p><ol type="1"><li>The
+packages and the repository meta-data are digitally signed, so you'll
+need to import the key into your apt's list of trusted keys in order to
+not get warnings about it. <span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><pre>    curl http://apt.wxwidgets.org/key.asc | sudo apt-key add - </pre><span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span></li><li class="gap"><p class="line862">Add the following lines to your <tt>/etc/apt/sources.list</tt> file (or use the "software sources" program under the "system" menu).  <strong>Replace the "<font color="Red">DIST</font>" text with whatever is appropriate for your system.</strong>  (See the table below for a list of supported distributions and architectures.) <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span></p><pre>    # wxWidgets/wxPython repository at apt.wxwidgets.org
+    deb http://apt.wxwidgets.org/ DIST-wx main
+    deb-src http://apt.wxwidgets.org/ DIST-wx main  </pre><span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><p class="line891"><strong>For example</strong>, if your distro is <strong>Ubuntu Gutsy</strong>, then you would use the following configuration statements: <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span></p><pre>    # wxWidgets/wxPython repository at apt.wxwidgets.org
+    deb http://apt.wxwidgets.org/ gutsy-wx main
+    deb-src http://apt.wxwidgets.org/ gutsy-wx main  </pre><span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span></li><li class="gap">Run the this command to update your local copy of the package meta-data. <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><pre>    sudo apt-get update  </pre><span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span></li><li class="gap"><p class="line862">You
+can now use your favorite package selection tool to install or upgrade
+the wxWidgets and wxPython packages. Here's how to do it with <tt>apt-get</tt>: <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span></p><pre>    sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n</pre><span class="anchor" id="line-28"></span><p class="line862">The packages <tt>libwxgtk2.8-dev</tt> and <tt>libgtk2.0-dev</tt> may need to be installed if a 3rd party application requires wxWidgets when building from source. <span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span></p><pre>    sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n libwxgtk2.8-dev libgtk2.0-dev</pre><span class="anchor" id="line-32"></span><p class="line862">These packages (and their dependencies) will replace earlier versions of wxPython and wxGTK in the same <a href="http://wiki.wxpython.org/ReleaseSeries">ReleaseSeries</a>
+that may have been installed previously. There are a few other wx
+packages as well, but those listed above and their dependencies are the
+core that are needed for use with wxPython. <span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span></p></li></ol><p class="line867">
+</p><h2 id="Supported_Distributions_and_Architectures">Supported Distributions and Architectures</h2>
+<span class="anchor" id="line-35"></span><p class="line874">At a terminal, enter "lsb_release -a" to print what version of Ubuntu you have. <span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span></p><p class="line874">There are currently packages in the repository for these Ubuntu releases and architectures: <span class="anchor" id="line-38"></span></p><div><table><tbody><tr>  <td style="background-color: rgb(208, 208, 208);"><p class="line862"> <strong>Release</strong> </p></td>
+  <td style="background-color: rgb(208, 208, 208);"><p class="line862"> <strong><font color="Red">DIST</font> name</strong> </p></td>
+  <td style="background-color: rgb(208, 208, 208);"><p class="line862"> <strong>Architectures</strong> </p></td>
+  <td style="background-color: rgb(208, 208, 208);"><p class="line862"> <strong>Python Versions</strong> </p></td>
+  <td style="background-color: rgb(208, 208, 208);"><p class="line862"> <strong>Latest wx</strong> </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-39"></span><p class="line862"> Ubuntu 6.06 </p></td>
+  <td><p class="line862"> dapper </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4 </p></td>
+  <td><p class="line862"> 2.8.8.0 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-40"></span><p class="line862"> Ubuntu 6.10 </p></td>
+  <td><p class="line862"> edgy </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4, 2.5 </p></td>
+  <td><p class="line862"> 2.8.6.1 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-41"></span><p class="line862"> Ubuntu 7.04 </p></td>
+  <td><p class="line862"> feisty </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4, 2.5 </p></td>
+  <td><p class="line862"> 2.8.9.1 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-42"></span><p class="line862"> Ubuntu 7.10 </p></td>
+  <td><p class="line862"> gutsy </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4, 2.5 </p></td>
+  <td><p class="line862"> 2.8.9.2 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-43"></span><p class="line862"> Ubuntu 8.04 </p></td>
+  <td><p class="line862"> hardy </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4, 2.5 </p></td>
+  <td><p class="line862"> 2.8.10.1 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-44"></span><p class="line862"> Ubuntu 8.10 </p></td>
+  <td><p class="line862"> intrepid </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4, 2.5 </p></td>
+  <td><p class="line862"> 2.8.10.1 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-45"></span><p class="line862"> Ubuntu 9.04 </p></td>
+  <td><p class="line862"> Jaunty </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.5, 2.6 </p></td>
+  <td><p class="line862"> 2.8.11.0 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-46"></span><p class="line862"> Ubuntu 9.10 </p></td>
+  <td><p class="line862"> karmic </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.5, 2.6 </p></td>
+  <td><p class="line862"> 2.8.11.0 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-47"></span><p class="line862"> Ubuntu 10.4 </p></td>
+  <td><p class="line862"> lucid </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.6 </p></td>
+  <td><p class="line862"> 2.8.11.0 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-48"></span><p class="line862"> Debian 4.0 </p></td>
+  <td><p class="line862"> etch </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4 </p></td>
+  <td><p class="line862"> 2.8.11.0 </p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-49"></span><p class="line862"> Debian 5.0 </p></td>
+  <td><p class="line862"> lenny </p></td>
+  <td><p class="line862"> i386, amd64 </p></td>
+  <td><p class="line862"> 2.4, 2.5 </p></td>
+  <td><p class="line862"> 2.8.11.0 </p></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><p class="line867">
+</p><h3 id="Notes">Notes</h3>
+<span class="anchor" id="line-52"></span><ul><li>When multiple Python
+versions are listed in the table above then that means that the
+wxPython package supports all of the listed versions of Python at the
+same time. This is accomplished using the pycentral debhelper, so the
+wxPython package is only built this way if pycentral is available and
+if it says that more than one version of Python should be supported. <span class="anchor" id="line-53"></span></li><li><p class="line862">If
+you don't see the release or architecture that you need here you can
+get the source package and build your own set of binary packages. See <a href="http://wiki.wxpython.org/BuildingDebianPackages">BuildingDebianPackages</a> for a how-to. <span class="anchor" id="line-54"></span></p></li><li><p class="line862">Starting
+with the 2.8.7.1 release this repository also contains packages for the
+ansi build of wxWidgets, all with an "-ansi" in their name. See <a href="http://wiki.wxpython.org/UnicodeBuild">UnicodeBuild</a> for what this means. <span class="anchor" id="line-55"></span></p></li><li>If
+you get errors during the package installation stating that the package
+relies on future versions of libc, libstdc++ etc, then you have likely
+chosen the wrong distribution, probably a later one than you actually
+have. <span class="anchor" id="line-56"></span></li></ul><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" dir="ltr" lang="es">InstallingOnUbuntuOrDebian  (última edición 2010-05-24 23:38:32 efectuada por <span title="RobinDunn @ c-98-246-90-205.hsd1.wa.comcast.net[98.246.90.205]"><a href="http://wiki.wxpython.org/RobinDunn" title="RobinDunn @ c-98-246-90-205.hsd1.wa.comcast.net[98.246.90.205]">RobinDunn</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Página inmutable</span></li><li class="toggleCommentsButton" style="display: none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comentarios</a></li><li><a class="nbinfo" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=info" rel="nofollow">Información</a></li><li><a class="nbattachments" href="http://wiki.wxpython.org/InstallingOnUbuntuOrDebian?action=AttachFile" rel="nofollow">Adjuntos</a></li><li>
+<form class="actionsmenu" method="get" action="/InstallingOnUbuntuOrDebian">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">Más Acciones</option><option value="raw">Texto sin formato</option>
+<option value="print">Vista de impresión</option>
+<option value="RenderAsDocbook">Mostrar en Docbook</option>
+<option value="refresh">Eliminar caché</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Corregir ortografía</option>
+<option value="LikePages">Páginas similares</option>
+<option value="LocalSiteMap">Mapa del sitio</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Renombrar Página</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Eliminar página</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Suscribir Usuario</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Eliminar Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revertir a esta revisión</option>
+<option value="show" disabled="disabled" class="disabled">Empaquetar Páginas</option>
+<option value="SyncPages">Sincronizar Páginas</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Subir</option>
+<option value="Save">Guardar</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('Más Acciones');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://wxpython.org/"><img src="InstallingWxOnUbuntuOrDebian_files/wxPyButton.png" alt="wxPython" border="0" width="100" height="43"></a></li><li><a href="http://www.python.org/"><img src="InstallingWxOnUbuntuOrDebian_files/PythonPowered.gif" alt="PythonPowered" border="0" width="82" height="33"></a></li><li><a href="http://sourceforge.net/projects/wxpython/"><img src="InstallingWxOnUbuntuOrDebian_files/sflogo.png" alt="sourceforge" border="0" width="88" height="31"></a></li><li><a href="http://www.manning.com/affiliate/idevaffiliate.php?id=189_23_1_21"><img src="InstallingWxOnUbuntuOrDebian_files/wxPython.gif" border="0" width="144" height="36"></a></li>
+</ul>
+
+
+</div>
+</body></html>

@@ -1,0 +1,30 @@
+-- apuestas
+-- borrar apuestas menores a una fecha
+-- select count(*) from apuestas where fecha < '2010-04-01'
+delete from apuestas where fecha < '2010-04-01'
+
+-- apuestasXopciones
+-- borrar los registros que tengan id_apuesta menor al menor id de la tabla apuestas
+-- select count(*) from apuestasXopciones where id_apuesta < (select min(id) from apuestas)
+delete from apuestasXopciones where id_apuesta < (select min(id) from apuestas)
+
+-- billetesXmaquinas
+-- borrar entradas de billetes menores a una fecha
+-- select count(*) from billetesXmaquinas where fecha < '2010-04-01'
+delete from billetesXmaquinas where fecha < '2010-04-01'
+
+-- pagos
+-- borrar pagos menores a una fecha
+-- select count(*) from pagos where fecha < '2010-04-01'
+delete from pagos where fecha < '2010-04-01'
+
+-- rondas
+-- borrar rondas menores a una fecha
+-- select count(*) from rondas where fecha < '2010-04-01'
+delete from rondas where fecha < '2010-04-01'
+
+
+-- jugadasPozo
+
+-- ganadoresPozo
+

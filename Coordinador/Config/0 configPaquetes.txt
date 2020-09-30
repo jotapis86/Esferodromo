@@ -1,0 +1,13 @@
+- python
+- idle
+sudo apt-get install idle-python2.5*
+- boa constructor (instala wx)
+sudo apt-get install boa-constructor*
+- pySqlite
+sudo apt-get install pysqlite*
+- sqlite3
+sudo apt-get install sqlite3*
+- libsdl-sound para sonido
+sudo apt-get install libsdl-sound*
+
+

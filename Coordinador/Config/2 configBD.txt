@@ -1,0 +1,19 @@
+0. Abrir una terminal
+
+1. Situarse en 
+cd $HOME/Esferodromo/Coordinador
+
+2. Ejecutar
+./sqlite3-3.5.9.bin bd
+
+3. Ejecutar
+.read scriptTablas.sql
+
+4. Ejecutar
+.read scriptInsercionesBasicas.sql
+
+5. Ejecutar
+.exit
+
+6. Ejecutar
+exit

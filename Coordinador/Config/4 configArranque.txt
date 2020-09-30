@@ -1,0 +1,21 @@
+0. Abrir una consola
+
+1. Situarse en la carpeta de configuracion
+cd $HOME/Esferodromo/Coordinador/Config
+
+1. Copiar en /usr/bin/ el archivo "arranque.sh"
+cp arranque.sh /usr/bin
+
+2. Situarse en /usr/bin
+cd /usr/bin
+
+3. Darle todos los permisos a arranque.sh
+sudo chmod 0777 arranque.sh
+
+4. Agregar arranque.sh al arranque de la sesion del sistema
+4.1. Ir a Sistema -> Preferencias -> Sesiones
+4.2. Clic en boton "Anadir"
+4.3. Escribir en campo "Nombre": "Arranque_Coordinador"
+4.4. Escribir en campo "Orden": "arranque.sh"
+4.5. Escribir en campo "Comentario": "Arranque del servidor central y coordinador de Esferodromo"
+
